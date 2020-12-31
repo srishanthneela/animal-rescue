@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+ <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>Animal Rescue</title>
+
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!--Boostrap CDN-->
+        <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
+        crossorigin="anonymous">
+
+        <!--font awesome cdn-->
+        <script src="https://kit.fontawesome.com/23412c6a8d.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+        <!--custom stylesheet-->
+        <link rel="stylesheet" href="css/animal adoption.css">
+
+        <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+
+        <link href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" rel="stylesheet"/>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&family=Cinzel:wght@500&family=Dancing+Script:wght@600&family=Langar&family=Playfair+Display+SC:wght@700&family=Pridi:wght@200;300&family=Rokkitt&family=Russo+One&family=Syncopate&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+
+
+      <div class="head">
+      </div>
+
+      <div class="logo">
+          <img class="" width="6%" src="images/logo .png">
+          <h2>The Animal Rescue</h2>
+      </div>
+
+      <div class="link">
+        <a href="http://127.0.0.1:5500/Animal%20Rescue.html">HOME</a>
+        <a href="http://127.0.0.1:5500/Animal%20Adoption.html">ANIMAL ADOPTION</a>
+        <a href="http://127.0.0.1:5500/market.html">MARKET</a>
+        <a href="http://127.0.0.1:5500/rescuepost.html">RESCUE</a>
+        <a href="http://127.0.0.1:5500/sign%20in.html">REGESTER</a>
+    </div>
+
+
+
+      <div id="myBtnContainer"><br>
+        <button class="btns active" onclick="filterSelection('all')"> Show all <br></button>
+        <button class="btns" onclick="filterSelection('dog')"> Dogs <br></button>
+        <button class="btns" onclick="filterSelection('Birds')"> Birds <br></button>
+        <button class="btns" onclick="filterSelection('fish')">Fishs <br></button>
+        <button class="btns" onclick="filterSelection('cats')"> Cats </button><br><br>
+      </div>
+  
+  
+      <div class="imgcontainer">
+  
+        <div class="animalcard filterDiv dog">
+            <br>
+            <a href="http://127.0.0.1:5500/product-details.html"><img src="images/dogimg/dog1.png" alt="Denim Jeans" ></a>
+            <h1>German Shepherd</h1>
+            <p class="price">30000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+            <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+             
+          <div class="animalcard filterDiv dog">
+            <br>
+            <a href="http://127.0.0.1:5500/product-details.html"><img src="images/dogimg/dog2.png" alt="Denim Jeans"></a>
+            <h1>Shih Tzu</h1>
+            <p class="price">40000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv dog">
+            <br>
+            <a href="http://127.0.0.1:5500/product-details.html"><img src="images/dogimg/dog3.png" alt="Denim Jeans"></a>
+            <h1>Great Dane</h1>
+            <p class="price">40000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv dog">
+            <br>
+            <a href="http://127.0.0.1:5500/product-details.html"><img src="images/dogimg/dog4.png" alt="Denim Jeans" ></a>
+            <h1>Bulldog</h1>
+            <p class="price">10000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv dog">
+            <br>
+            <a href="http://127.0.0.1:5500/product-details.html"><img src="images/dogimg/dog5.png" alt="Denim Jeans"></a>
+            <h1>Labrador</h1>
+            <p class="price">20000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv dog">
+            <br>
+            <a href="http://127.0.0.1:5500/product-details.html"><img  src="images/dogimg/dog6.png" alt="Denim Jeans" ></a>
+            <h1>Husky</h1>
+            <p class="price">30000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard  filterDiv dog">
+            <br>
+            <a href="http://127.0.0.1:5500/product-details.html"><img src="images/dogimg/dog7.png" alt="Denim Jeans"></a>
+            <h1>Pitbull</h1>
+            <p class="price">40000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv dog">
+            <br>
+            <a href="http://127.0.0.1:5500/product-details.html"><img src="images/dogimg/dog8.png" alt="Denim Jeans"></a>
+            <h1>Doberman</h1>
+            <p class="price">2500</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv dog">
+            
+            <a href="http://127.0.0.1:5500/product-details.html"><img src="images/dogimg/dog9.png" alt="Denim Jeans"></a>
+            <h1>Poodle</h1>
+            <p class="price">10000</p>
+            <br>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv dog">
+            <br>
+            <a href="http://127.0.0.1:5500/product-details.html"><img src="images/dogimg/dog10.png" alt="Denim Jeans"></a>
+            <h1>Newfoundland</h1>
+            <p class="price">40000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv Birds">
+            <br>
+          <img src="images/birdimg/bird1.png" alt="Denim Jeans" >
+            <h1>German Shepherd</h1>
+            <p class="price">30000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+             
+          <div class="animalcard filterDiv Birds">
+            <br>
+            <img src="images/birdimg/bird2.png" alt="Denim Jeans">
+            <h1>Shih Tzu</h1>
+            <p class="price">40000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv Birds">
+            <br>
+            <img src="images/birdimg/bird3.png" alt="Denim Jeans">
+            <h1>Great Dane</h1>
+            <p class="price">40000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv Birds">
+            <br>
+            <img src="images/birdimg/bird4.png" alt="Denim Jeans" >
+            <h1>Bulldog</h1>
+            <p class="price">10000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv fish">
+            <br>
+            <img src="images/fishimg/fish1.png" alt="Denim Jeans">
+            <h1>Newfoundland</h1>
+            <p class="price">40000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv fish">
+            <br>
+          <img src="images/fishimg/fish2.png" alt="Denim Jeans" >
+            <h1>German Shepherd</h1>
+            <p class="price">30000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+             
+          <div class="animalcard filterDiv fish">
+            <br>
+            <img src="images/fishimg/fish3.png" alt="Denim Jeans">
+            <h1>Shih Tzu</h1>
+            <p class="price">40000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv fish">
+            <br>
+            <img src="images/fishimg/fish4.png" alt="Denim Jeans">
+            <h1>Great Dane</h1>
+            <p class="price">40000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv fish">
+            <br>
+            <img src="images/fishimg/fish5.png" alt="Denim Jeans" >
+            <h1>Bulldog</h1>
+            <p class="price">10000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv cats">
+            <br>
+            <img src="images/catimg/cat1.png" alt="Denim Jeans">
+            <h1>Newfoundland</h1>
+            <p class="price">40000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv cats">
+            <br>
+            <img src="images/catimg/cat2.png" alt="Denim Jeans" >
+            <h1>German Shepherd</h1>
+            <p class="price">30000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+             
+          <div class="animalcard filterDiv cats">
+            <br>
+            <img src="images/catimg/cat3.png" alt="Denim Jeans">
+            <h1>Shih Tzu</h1>
+            <p class="price">40000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv cats">
+            <br>
+            <img src="images/catimg/cat4.png" alt="Denim Jeans">
+            <h1>Great Dane</h1>
+            <p class="price">40000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv cats">
+            <br>
+            <img src="images/catimg/cat5.png" alt="Denim Jeans" >
+            <h1>Bulldog</h1>
+            <p class="price">10000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+          
+          <div class="animalcard filterDiv cats">
+            <br>
+            <img src="images/catimg/cat6.png" alt="Denim Jeans" >
+            <h1>Bulldog</h1>
+            <p class="price">10000</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+ <p><a class="btn" href="http://127.0.0.1:5500/product-details.html">adoption</a></p>
+          </div>
+  
+  </div>
+
+
+
+
+    <br><br>
+    <br><br>
+  
+  </div>
+
+
+<script src="js/options.js"></script>
+
+</body>
+</html>
+
